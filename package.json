@@ -1,0 +1,33 @@
+{
+  "name": "cc-d4-rice-cooker-ci-hidden-machina",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/__xb4cFP)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/*.test.js",
+    "app": "node src/Ricecooker.js",
+    "check": "eslint src/**/*.js tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HidDen-MaChinA/cc-d4-rice-cooker-ci-HidDen-MaChinA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HidDen-MaChinA/cc-d4-rice-cooker-ci-HidDen-MaChinA/issues"
+  },
+  "homepage": "https://github.com/HidDen-MaChinA/cc-d4-rice-cooker-ci-HidDen-MaChinA#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
