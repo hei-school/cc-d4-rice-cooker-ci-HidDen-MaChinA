@@ -4,7 +4,7 @@ export function RiceCookerGenerator (broken = false, isFilled = false, content =
   const forTesting = new RiceCooker()
   forTesting.broken = broken
   forTesting.isFiled = isFilled
-  forTesting.content = content
+  forTesting.setContent(content)
   forTesting.isPlugedIn = isPlugedIn
   return forTesting
 }

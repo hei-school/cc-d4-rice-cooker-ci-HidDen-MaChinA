@@ -19,6 +19,9 @@ jobs:
           name: "install dependencies"
           command: "npm install"
       - run:
+          name: "quality check"
+          command: "npm run check"
+      - run:
           name: "run test"
           command: "npm run test"
 
