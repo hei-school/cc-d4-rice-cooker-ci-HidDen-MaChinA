@@ -16,8 +16,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "run test"
-          command: "npm run test"
+        name: "install dependencies"
+        command: "npm install"
+      - run:
+        name: "run test"
+        command: "npm run test"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
