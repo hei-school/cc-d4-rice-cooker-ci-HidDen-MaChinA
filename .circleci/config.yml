@@ -12,5 +12,4 @@ workflows:
   riceCookerTest:
     jobs:
       - maven/test:
-          version:
           command: "test"
