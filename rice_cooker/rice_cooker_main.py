@@ -1,4 +1,4 @@
-class rice_cooker:
+class RiceCooker:
     def __init__(self):
         self.is_plugged_in = False
         self.is_filled = False

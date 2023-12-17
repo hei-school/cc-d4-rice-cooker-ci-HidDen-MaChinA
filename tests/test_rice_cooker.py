@@ -1,9 +1,9 @@
 import unittest
-from rice_cooker.rice_cooker_main import rice_cooker
+from rice_cooker.rice_cooker_main import RiceCooker
 
 class TestRiceCooker(unittest.TestCase):
     def setUp(self):
-        self.toTest = rice_cooker()
+        self.toTest = RiceCooker()
     def test_plug_in_that_rice_cooker(self):
         print(self.toTest.is_plugged_in)
         self.assertEqual(self.toTest.plug_in_or_out_that_rice_cooker(),"Oke now it's plugged in")
