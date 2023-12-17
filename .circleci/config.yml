@@ -19,11 +19,11 @@ jobs:
           name: "install all the requirements"
           command: "pip install -r requirements.txt"
       - run:
-          name: "quality check"
-          command: "pylint rice_cooker/ tests/"
-      - run:
           name: "run test"
           command: "python -m unittest discover"
+      - run:
+          name: "quality check"
+          command: "pylint rice_cooker/ tests/"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
