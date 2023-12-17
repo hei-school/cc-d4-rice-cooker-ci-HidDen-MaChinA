@@ -5,7 +5,7 @@ class RiceCooker:
         self.broken = False
         self.content = []
 
-    def set_content(self, value=[]):
+    def set_content(self, value):
         if not isinstance(value, list):
             raise ValueError('Dude, you need an array')
         if len(value) > 20:
@@ -29,12 +29,19 @@ class RiceCooker:
     def list_each_food_inside(self):
         if not self.content:
             return 'No food inside this'
-        return 'Each food inside the rice-cooker, even if you shouldn\'t have more than rice in it:\n{}'.format('\n'.join(self.content))
+        message = 'Each food inside the rice-cooker, even if you shouldn\'t '
+        message += 'have more than rice in it:\n{}'.format('\n'.join(self.content))
+        return message
 
     def get_the_dish(self, dish_name):
         self.content = []
-        return 'Oke, here is your dish: {}\nAnyway, I think all you should do with a rice-cooker is...cook rice. If you wanted to cook some steak or something like that inside of it, the only place you belong is in jail.'.format(dish_name)
+        message = f'Oke, here is your dish: {dish_name}\nAnyway, I think all you should '
+        message += 'do with a rice-cooker is...cook rice. If you wanted to cook some steak '
+        message += 'or something like that inside of it, the only place you belong is in jail.'
+        return message
 
     def throw_at_people(self):
         self.broken = True
-        return 'Oke...you\'re dumb...or you are just...dumb...Oke...anyway the rice-cooker is broken'
+        message = 'Oke...you\'re dumb...or you are just...dumb'
+        message += '...Oke...anyway the rice-cooker is broken'
+        return message
