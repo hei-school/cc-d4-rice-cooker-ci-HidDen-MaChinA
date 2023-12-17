@@ -6,9 +6,17 @@ version: 2.1
 # See: https://circleci.com/docs/configuration-reference/#jobs
 orbs:
   maven: circleci/maven@1.4.1
+jobs:
+  run-all-test:
+    steps:
+      - checkout
+      - run:
+        name: "run all the test"
+        command: "mvn test"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   riceCookerTest:
     jobs:
       - maven/test
+      - run-all-test
