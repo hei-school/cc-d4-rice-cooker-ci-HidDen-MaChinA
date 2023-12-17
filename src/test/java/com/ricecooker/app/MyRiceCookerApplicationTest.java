@@ -4,9 +4,9 @@ import com.ricecooker.app.utils.RiceCookerUtil;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class MyRiceCookerApplicationTests {
+public class MyRiceCookerApplicationTest {
 	private RiceCookerUtil util = new RiceCookerUtil();
-	public MyRiceCookerApplicationTests(){
+	public MyRiceCookerApplicationTest(){
 
 	}
 	@Test
