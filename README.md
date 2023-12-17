@@ -1,3 +1,5 @@
+# Description
+    just a simple rice-cooker terminal programme
 
 # Installation
 ## java
