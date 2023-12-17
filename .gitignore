@@ -2,4 +2,4 @@ riceCookerEnv/
 Lib
 Scripts
 Include
-__pycache__
+__pycache__/
