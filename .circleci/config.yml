@@ -20,7 +20,7 @@ jobs:
           command: "pip install -r requirements.txt"
       - run:
           name: "run test"
-          command: "pip "
+          command: "python -m unittest discover"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
