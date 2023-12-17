@@ -1,7 +1,7 @@
 import unittest
 from rice_cooker.rice_cooker_main import rice_cooker
 
-class test_rice_cooker(unittest.TestCase):
+class TestRiceCooker(unittest.TestCase):
     def setUp(self):
         self.toTest = rice_cooker()
     def test_plug_in_that_rice_cooker(self):
@@ -26,5 +26,5 @@ class test_rice_cooker(unittest.TestCase):
     def test_get_the_dish(self):
         self.assertEqual(self.toTest.get_the_dish("my dish"), "Oke, here is your dish: my dish\nAnyway, I think all you should do with a rice-cooker is...cook rice. If you wanted to cook some steak or something like that inside of it, the only place you belong is in jail.")
     
-
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()

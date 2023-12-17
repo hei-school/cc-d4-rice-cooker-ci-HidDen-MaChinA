@@ -16,8 +16,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "install all the requirements"
+          command: "pip install -r requirements.txt"
+      - run:
           name: "run test"
-          command: ""
+          command: "pip "
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
