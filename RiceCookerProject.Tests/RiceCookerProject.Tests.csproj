@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\riceCooker\RiceCookerProject.csproj" />
+    <ProjectReference Include="..\RiceCookerProject\RiceCookerProject.csproj" />
   </ItemGroup>
 
 </Project>
