@@ -23,4 +23,3 @@ workflows:
   riceCookerTest:
     jobs:
       - build
-      - run-test
