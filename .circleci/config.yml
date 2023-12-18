@@ -13,9 +13,9 @@ jobs:
     steps:
       - checkout
       - run: Write-Host 'Hello, Windows'
-    steps:
-      - checkout
-      - run: "test ./RiceCookerProject.Tests/RiceCookerProject.Tests.csproj"
+      - run:
+          name: "running test"
+          command: "test ./RiceCookerProject.Tests/RiceCookerProject.Tests.csproj"
       
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
