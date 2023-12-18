@@ -13,6 +13,7 @@ jobs:
         steps:
             - run: Write-Host 'Hello, Windows'
             - run: dotnet --version
+            - checkout
             - run: dotnet test .\RiceCookerProject.Tests\RiceCookerProject.Tests.csproj
 workflows:
     my-workflow:
