@@ -6,10 +6,22 @@ version: 2.1
 # See: https://circleci.com/docs/configuration-reference/#jobs
 orbs:
   win: circleci/windows@5
+jobs:
+  build:
+    executor:
+      name: win/default
+    steps:
+      - checkout
+      - run: Write-Host 'Hello, Windows'
+  run-test:
+    steps:
+      - checkout
+      - run: "test ./RiceCookerProject.Tests/RiceCookerProject.Tests.csproj"
+      
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   riceCookerTest:
     jobs:
-      - dotnet/test:
-          command: "test ./RiceCookerProject.Tests/RiceCookerProject.Tests.csproj"
+      - build
+      - run-test
