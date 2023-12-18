@@ -13,7 +13,6 @@ jobs:
     steps:
       - checkout
       - run: Write-Host 'Hello, Windows'
-  run-test:
     steps:
       - checkout
       - run: "test ./RiceCookerProject.Tests/RiceCookerProject.Tests.csproj"
