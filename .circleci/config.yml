@@ -8,11 +8,13 @@ version: 2.1
 orbs:
     win: circleci/windows@5.0
 jobs:
-    build:
+    build-and-test:
         executor: win/server-2022
         steps:
             - run: Write-Host 'Hello, Windows'
+            - run: dotnet --version
+            - run: dotnet test 
 workflows:
     my-workflow:
         jobs:
-            - build
+            - build-and-test
